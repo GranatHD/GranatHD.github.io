@@ -43,7 +43,10 @@ content{
 
 
 #main1{
-  text-align: left;
+  text-align: inherit;
+  float: left;
+  width: 60%;
+
 }
 #footer{
   clear: both;
@@ -78,6 +81,7 @@ content{
 }
 
 
+
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
@@ -108,7 +112,7 @@ content{
 
 .tabcontent {
   display: none;
-  padding: 30px 12px;
+  padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
 }
