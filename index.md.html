@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+
+      <title>My first site</title>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <meta charset="urf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="contract from example">
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>Trying to make a WEBSITE</h1>
+      </div>
+      <div class="tab" id="content">
+        <div id="nav">
+            <h3>Info</h3>
+            <ul>
+              <li><button class="tablinks" onclick="opentag(event, 'Youtube') "> This is my youtube</button></li>
+              <li><button class="tablinks" onclick="opentag(event, 'Story')" > This is my story</button></li>
+              <li><button class="tablinks" onclick="opentag(event, 'Contact')"> Contact</button></li>
+            </ul>
+
+
+
+
+
+
+            </div>
+
+
+        <div id="main1">
+          Yes this is my name<br>
+          <b>Aanis</b>
+        </p>
+        <p>Hello my name is <b>Aanis</b> and this is my website layout. First attempt at making this hopefully its not as bad as my normal ones are and hopefully this works out. First I want you to test out all of the features starting from the left, the first page is the home page. The second link leads to my story, you may find something interesting there. They third link goes to places you can contact me on</p>
+
+    </div>
+</div>
+<div id="Story" class="tabcontent" >
+  <div id="hstory" >
+    <h2>Story Of My Incidents</h2>
+  </div>
+        <div id="story" >
+      <h4> My life has had its ups and downs mainly downs but i've been going through them. The main reason why I wanted to write this story is to share some of my experiences.
+      First of which starts when I was around 7-11 years old, I had one of my most dangerous injuries which happened while I was playing tag with my friends and we were running inside the school playground.
+      One of my friends decided that it was a good idea to run behind a swing and I thought it was an even better idea to chase him behind that swing so I did as i said and went behind my swing which I shouldnt have.
+      After I went behind because my luck is soo good and everying goes according to plan(sarcasm) a girl swinging on the swing by chance also decided to swing fast and while doing so the swing's seat's corner hit my forehead,
+      that made a huge hole inside it but luckily I did not feel anything for some reason. Blood was pouring out the girl was crying while my classmates and some other boys carried me to see the teacher (Coming soon)</h4>
+      </div>
+      </div>
+<div id="Youtube" class="tabcontent">
+<div id="yelp">
+<h1>Youtube Info</h1>
+</div>
+<div id="yt">
+  <h2>This is my Youtube check it out now</h2>
+  <p>
+<a href="https://www.youtube.com/channel/UC4zSAnU6w7GOYIMvaIiSjQQ"target="_blank">
+  <img src="https://cdn.havecamerawilltravel.com/photographer/files/2020/01/youtube-logo-new-1068x510.jpg" width="100" height="50">
+</a>
+</p>
+</div>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h2><a href="mailto:granathddt@gmail.com"> Send it!</h2>
+  <!-- doesnt work rn
+  <form class="gform" method="POST" data-email="granathddt@gmail.com"
+  action=
+  "https://script.google.com/macros/s/AKfycbwxrlTE8ddu_kWvmv1sE1dt9vITHrY7uHdulB9PRg/exec">
+
+  <div class="form-elements">
+    <fieldset class="pure-group">
+      <label for="name">Name: </label>
+      <input id="name" name="name" placeholder="TELL ME IT NOW!" />
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="message">Message: </label>
+      <textarea id="message" name="message" rows="10"
+      placeholder="Any Feed Back?"></textarea>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="email"><b>Your</b> Email Address:</label>
+      <input id="email" name="email" type="email" value=""
+      required placeholder="your.name@email.com"/>
+    </fieldset>
+
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+  </div>
+
+  <div class="thankyou_message" style="display:none;">
+    <h2><em>Thanks</em> Now I know who you are!
+      You will be seeing me :)</h2>
+  </div>
+
+</form>
+-->
+
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
+</div>
+
+<script>
+function opentag(evt, Name) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(Name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
+    <div id="footer">
+      Copyright &copy; Aanis (dont use)
+    <div>
+</body>
+</html>
