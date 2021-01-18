@@ -21,7 +21,7 @@ class Calculator {
   }
 
   chooseOperation(operation){
-    if (this.currentOperand == '') return
+  //  if (this.currentOperand == '') return
 
     if (this.previousOperand !== ''){
       this.compute()
@@ -36,7 +36,7 @@ class Calculator {
     let cube
     const prev = parseFloat(this.previousOperand)
     const current = parseFloat(this.currentOperand)
-    if (isNaN(prev) || isNaN(current)) return
+    if (isNaN(prev) && isNaN(current)) return
     switch (this.operation) {
       case '+':
         computation = prev + current
@@ -60,43 +60,43 @@ class Calculator {
         computation = prev * prev * prev
         break
       case 'Cos':
-        computation = Math.cos(prev)
+        computation = Math.cos(current)
         break
       case 'Sin':
-        computation = Math.sin(prev)
+        computation = Math.sin(current)
         break
       case 'Tan':
-        computation = Math.tan(prev)
+        computation = Math.tan(current)
         break
       case 'Pow':
         computation = Math.pow(prev, current)
         break
       case 'Ln':
-        computation = Math.log(prev)
+        computation = Math.log(current)
         break
       case 'Log':
-        computation = Math.log10(prev)
+        computation = Math.log10(current)
         break
       case 'Cosh':
-        computation = Math.cosh(prev)
+        computation = Math.cosh(current)
         break
       case 'Sinh':
-        computation = Math.sinh(prev)
+        computation = Math.sinh(current)
         break
       case 'Tanh':
-        computation = Math.tanh(prev)
+        computation = Math.tanh(current)
         break
       case 'Acos':
-        computation = Math.acos(prev)
+        computation = Math.acos(current)
         break
       case 'Asin':
-        computation = Math.asin(prev)
+        computation = Math.asin(current)
         break
       case 'Atan':
-        computation = Math.atan(prev)
+        computation = Math.atan(current)
         break
       case 'Atan2':
-        computation = Math.atan2(prev)
+        computation = Math.atan2(current)
         break
 
     }
